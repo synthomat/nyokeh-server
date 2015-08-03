@@ -1,0 +1,20 @@
+{
+  "name": "nyokeh-server",
+  "version": "0.1.0",
+  "description": "Nyokeh Server Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anton Zering <synth@lostprofile.de>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.13.2",
+    "express": "^4.13.1",
+    "express-session": "^1.11.3",
+    "lodash": "^3.10.0",
+    "multer": "^1.0.1",
+    "node-uuid": "^1.4.3",
+    "passport": "^0.2.2"
+  }
+}

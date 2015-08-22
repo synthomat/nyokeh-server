@@ -1,7 +1,7 @@
 var express = require('express'),
-    uuid = require('node-uuid'),
     multer  = require('multer'),
-    path = require('path');
+    path = require('path'),
+    randomstring = require('randomstring');
 
 var URL = "http://localhost:3000/";
 
@@ -9,7 +9,7 @@ var storage = multer.diskStorage({
   destination: 'uploads/',
   filename: function (req, file, cb) {
     var ext = path.extname(file.originalname);
-    cb(null, uuid.v4().substr(0,8) +  ext);
+    cb(null, randomstring.generate(8) +  ext);
   }
 });
 
